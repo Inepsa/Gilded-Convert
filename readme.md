@@ -5,9 +5,9 @@
 -- Provided in the CFG is a tiny snippet of what we use to give you ideas
 
 ## Requirements
--- Up to date Vorp Core and Inventory
--- We utilize vorp_animations
--- Ensure that vorp_animations is started before gilded_convert in your resources or server cfg files
+### Up to date Vorp Core and Inventory
+### We utilize vorp_animations
+### Ensure that vorp_animations is started before gilded_convert in your resources or server cfg files
 
 ## Features
 -- Open cigarette packs, crates that carry ore, pack cigarettes into packages
