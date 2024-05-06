@@ -17,10 +17,14 @@ Ensure that vorp_animations is started before gilded_convert in your resources o
 
 # Features
 Open cigarette packs, crates that carry ore, pack cigarettes into packages
+
 Turn an item or a list of items into a weapon with a double click
-Animations per item!
+
+Animations for each item in your cfg
+
 Random item option for things like grab bags
-Notifications for everything take, given etc.
+
+Notifications for everything taken, given etc.
 
 # Potenitally adding in
 Webhooks. Used to have them but not incredibly useful information so im 50/50 on them
