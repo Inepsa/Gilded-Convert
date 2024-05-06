@@ -20,3 +20,19 @@
 ### Webhooks. Used to have them but not incredibly useful information so im 50/50 on them
 ### Take in actual weapons to break down into parts
 
+# REQUIREMENTS Part 2
+
+You will need to add some code to your vorp_animations script in the Config.Animations {} table if you want to use the animation in the cfg
+
+    ["inspection1"] = {
+        dict = "mech_inspection@cigarette_card_multiple@satchel",
+        name = "enter", 
+        flag = 17,
+        type = 'standard'
+	},
+    ["inspection2"] = {
+        dict = "mech_inventory@item@_templates@cylinder@d6-5_h1-5_inspectz@unarmed@base",
+        name = "inspect_sweep_extents", 
+        flag = 17,
+        type = 'standard'
+	},
