@@ -2,9 +2,13 @@ Config = {}
 
 
 Config.ConvertItems = {
-    ----------------------------
+
+    -- UsableItem is your database item that you double click to use. 
+    -- All taken items and reward items must be in your databse
+    
+    --------------------------------------------------------
     --Crates
-    ----------------------------
+    --------------------------------------------------------
     {
 		UsableItem = "whetstone_crate_empty",
 		ErrorMsg = "Not enough space",
@@ -21,8 +25,8 @@ Config.ConvertItems = {
 		WeaponReward = false,
 		WeaponRewardAmt = 0,
 		WeaponItems = { { weapon = "" } },
-        animation = "inspection2", -- relates to vorp_animations anim name
-		duration = 2000,	 -- duration you want the anim to play
+        animation = "inspection2",
+		duration = 2000,
 	},
 	{
 		UsableItem = "whetstone_crate_full",
@@ -39,13 +43,13 @@ Config.ConvertItems = {
 		WeaponReward = false,
 		WeaponRewardAmt = 0,
 		WeaponItems = { { weapon = "" } },
-        animation = "inspection2", -- relates to vorp_animations anim name
-		duration = 2000,	 -- duration you want the anim to play
+        animation = "inspection2", 
+		duration = 2000,
 	},
 
-    ----------------------------
+    --------------------------------------------------------
     --Random Items
-    ----------------------------
+    --------------------------------------------------------
 	{
 		UsableItem = "bag_paper",
 		ErrorMsg = "You need at least 1",
@@ -73,8 +77,30 @@ Config.ConvertItems = {
 		WeaponReward = false,
 		WeaponRewardAmt = 0,
 		WeaponItems = { { weapon = "" } },
-		animation = "inspection2", -- relates to vorp_animations anim name
-		duration = 2000,     -- duration you want the anim to play
+		animation = "inspection2", 
+		duration = 2000, 
 	},
 
+    --------------------------------------------------------
+    -- Convert an item into a weapon
+    --------------------------------------------------------
+    {
+		UsableItem = "weapon_shotgun_sawedoff", 
+		ErrorMsg = "You need more", 
+		SuccessMsg = "Equipped", 
+		WebhookName = "", 
+		TakenItems = {
+			{ item = "weapon_shotgun_sawedoff", count = 1 },
+		},
+
+		RewardItemsRarity = false,
+        RewardItems = {},
+		WeaponReward = true, 
+		WeaponRewardAmt = 1, 
+		WeaponItems = { { weapon = "WEAPON_SHOTGUN_SAWEDOFF" } },
+		CashReward = 0, 
+		GoldReward = 0,
+        animation = "inspection2", -- relates to vorp_animations anim name
+		duration = 2000,	 -- duration you want the anim to play 
+	},
 }
