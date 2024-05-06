@@ -105,7 +105,7 @@ Config.ConvertItems = {
 	},
 
     --------------------------------------------------------
-    -- Cigarettes
+    -- Tobacco/drugs
     --------------------------------------------------------
     {
 		UsableItem = "goldenbluntbox",
