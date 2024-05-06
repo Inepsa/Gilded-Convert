@@ -5,7 +5,7 @@ Config.ConvertItems = {
 
     -- UsableItem is your database item that you double click to use. 
     -- All taken items and reward items must be in your databse
-    
+
     --------------------------------------------------------
     --Crates
     --------------------------------------------------------
@@ -100,7 +100,47 @@ Config.ConvertItems = {
 		WeaponItems = { { weapon = "WEAPON_SHOTGUN_SAWEDOFF" } },
 		CashReward = 0, 
 		GoldReward = 0,
-        animation = "inspection2", -- relates to vorp_animations anim name
-		duration = 2000,	 -- duration you want the anim to play 
+        animation = "inspection2", 
+		duration = 2000,	  
+	},
+
+    --------------------------------------------------------
+    -- Cigarettes
+    --------------------------------------------------------
+    {
+		UsableItem = "goldenbluntbox",
+		ErrorMsg = "Not enough space",
+		SuccessMsg = "You opened a Cigar Box",
+		WebhookName = "",
+		TakenItems = {
+			{ item = "goldenbluntbox", count = 1 },
+		},
+		RewardItemsRarity = false,
+        RewardItems = {
+			{ item = "goldleafblunt", count = 5 },
+		},
+		WeaponReward = false,
+		WeaponRewardAmt = 0,
+		WeaponItems = { { weapon = "" } },
+        animation = "inspection2", 
+		duration = 2000,	 
+	},
+	{
+		UsableItem = "fettybluntbox",
+		ErrorMsg = "Not enough space",
+		SuccessMsg = "You opened a Fetty Box",
+		WebhookName = "",
+		TakenItems = {
+			{ item = "fettybluntbox", count = 1 },
+		},
+		RewardItemsRarity = false,
+        RewardItems = {
+			{ item = "fettyblunt", count = 5 },
+		},
+		WeaponReward = false,
+		WeaponRewardAmt = 0,
+		WeaponItems = { { weapon = "" } },
+        animation = "inspection2", 
+		duration = 2000,	 
 	},
 }
