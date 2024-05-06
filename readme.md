@@ -1,14 +1,18 @@
 # Gilded Convert Script
 # Created by InepsaOG and shared for the VORP community
 
-This script is incredibly handy and we use it for literally hundreds of items on our live server
+This script is incredibly handy and we use it for literally hundreds of items on our live server. 
 Provided in the CFG is a tiny snippet of what we use to give you ideas
 
 Feel free to edit or use any part of the script as long as you give credit where due
 
 # Requirements
-Up to date Vorp Core and Inventory
-We utilize vorp_animations
+Vorp Core - Newest
+
+Vorp_Inventory - Newest
+
+Vorp_animations - Newest
+
 Ensure that vorp_animations is started before gilded_convert in your resources or server cfg files
 
 # Features
