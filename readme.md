@@ -2,9 +2,9 @@
 # Created by InepsaOG and shared for the VORP community
 
 This script is incredibly handy and we use it for literally hundreds of items on our live server. 
-Provided in the CFG is a tiny snippet of what we use to give you ideas
+Provided in the CFG is a tiny snippet of what we use to give you ideas. Any ideas to improve the code are more than welcome!
 
-Feel free to edit or use any part of the script as long as you give credit where due
+Feel free to edit or use any part of the script as long as you give credit where due. 
 
 # Requirements
 Vorp Core - Newest
