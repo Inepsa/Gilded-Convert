@@ -1,4 +1,3 @@
-# InepsaOG's Convert Script
 # Shared for the VORP community so we can improve it together
 
 This script is incredibly handy and we use it for literally hundreds of items on our live server. 
@@ -15,7 +14,7 @@ Vorp_Inventory - Newest
 
 Vorp_animations - Newest
 
-Ensure that vorp_animations is started before gilded_convert in your resources or server cfg files
+Ensure that vorp_animations is started before inepsaog_item_convert in your resources or server cfg files
 
 # Features
 Open cigarette packs, crates that carry ore, pack cigarettes into packages
