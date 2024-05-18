@@ -4,19 +4,19 @@ Config = {}
 Config.ConvertItems = {
 
     -- UsableItem is your database item that you double click to use.
-    -- All taken items and reward items must be in your databse
+    -- All taken items and reward items must be in your database
 
     --------------------------------------------------------
     --Crates
     --------------------------------------------------------
     {
-        UsableItem = "whetstone_crate_empty",
+        UsableItem = "whetstone_crate_empty", -- Item you "use" in your pockets, add to database
         ErrorMsg = "Not enough space",
         SuccessMsg = "You Packed up 50 Whetstone",
         WebhookName = "",
-        TakenItems = {
-            { item = "whetstone_crate_empty", count = 1 },
-            { item = "whetstone",             count = 50 },
+        TakenItems = {                                      -- Optional field -- rarity = 150
+            { item = "whetstone_crate_empty", count = 1 },  -- Item taken you need in your pockets, add to database
+            { item = "whetstone",             count = 50 }, -- Item taken you need in your pockets, add to database
         },
         RewardItemsRarity = false,
         RewardItems = {
@@ -85,19 +85,19 @@ Config.ConvertItems = {
     -- Convert an item into a weapon
     --------------------------------------------------------
     {
-        UsableItem = "weapon_shotgun_sawedoff",
-        ErrorMsg = "You need more",
+        UsableItem = "weapon_shotgun_sawedoff",    -- this is an item. In our server you can craft weapons as items so you can stack them. Then you can double click to turn into a weapon
+        ErrorMsg = "You need more",                 
         SuccessMsg = "Equipped",
         WebhookName = "",
         TakenItems = {
-            { item = "weapon_shotgun_sawedoff", count = 1 },
+            { item = "weapon_shotgun_sawedoff", count = 1 },   -- You could also have a list of item parts here for your weapons, and have a blueprint as the UsableItem above
         },
 
         RewardItemsRarity = false,
         RewardItems = {},
         WeaponReward = true,
         WeaponRewardAmt = 1,
-        WeaponItems = { { weapon = "WEAPON_SHOTGUN_SAWEDOFF" } },
+        WeaponItems = { { weapon = "WEAPON_SHOTGUN_SAWEDOFF" } },   -- Currently I think you can only do one
         CashReward = 0,
         GoldReward = 0,
         animation = "inspection2",

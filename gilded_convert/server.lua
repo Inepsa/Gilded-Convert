@@ -66,7 +66,7 @@ local function takeItemsFromPlayer(source, takenItems)
             return ""
         end
         takenItemsText = takenItemsText .. takenItem.item .. " x" .. takenItem.count .. "\n"
-        Wait(100) -- Add a small delay to prevent potential race conditions
+        Wait(100) 
     end
     return takenItemsText
 end
@@ -107,7 +107,7 @@ local function giveRewardItemsToPlayer(source, rewardItems, isRarityBased)
                     rewardItemsText = rewardItemsText .. rewardItem.item .. " x" .. rewardItem.count .. "\n"
                     addedRewardItems = addedRewardItems + 1
                 end
-                Wait(100) -- Add a small delay to prevent potential race conditions
+                Wait(100)
             end
         else
             TriggerClientEvent('vorp:TipRight', source, 'You can\'t hold any more!', 5000)
@@ -118,26 +118,27 @@ local function giveRewardItemsToPlayer(source, rewardItems, isRarityBased)
 end
 
 local function giveWeaponRewardToPlayer(source, weaponData)
-local weaponName = string.upper(weaponData.weapon)
-local weaponAmount = weaponData.count or 1
+    local weaponName = string.upper(weaponData.weapon)
+    local weaponAmount = weaponData.count or 1
 
-if string.sub(weaponName, 1, string.len("WEAPON_")) == "WEAPON_" then
-    for i = 1, weaponAmount do
-        exports.vorp_inventory:createWeapon(source, weaponName, {}, {}, {}, function(success)
-            if success then
-                TriggerClientEvent('vorp:Notify', source, "You received: " .. weaponName .. " x" .. weaponAmount, 5000)
-             else
-                print("Error giving weapon reward to player: " .. weaponName)
-                TriggerClientEvent('vorp:TipRight', source, 'Failed to give weapon reward!', 5000)
-            end
-        end)
-    end
-else
-    print("Invalid weapon name: " .. weaponName)
-    TriggerClientEvent('vorp:TipRight', source, 'Invalid weapon reward!', 5000)
-    end
+    if string.sub(weaponName, 1, string.len("WEAPON_")) == "WEAPON_" then
+        for i = 1, weaponAmount do
+            exports.vorp_inventory:createWeapon(source, weaponName, {}, {}, {}, function(success)
+                if success then
+                    TriggerClientEvent('vorp:Notify', source, "You received: " .. weaponName .. " x" .. weaponAmount, 5000)
+                else
+                    print("Error giving weapon reward to player: " .. weaponName)
+                    TriggerClientEvent('vorp:TipRight', source, 'Failed to give weapon reward!', 5000)
+                end
+            end)
+        end
+    else
+        print("Invalid weapon name: " .. weaponName)
+        TriggerClientEvent('vorp:TipRight', source, 'Invalid weapon reward!', 5000)
+        end
 end
 
+-- Register usable items for item conversion, main logic
 for _, item in pairs(Config.ConvertItems) do
     exports['vorp_inventory']:registerUsableItem(item.UsableItem, function(data)
         local _source = data.source
@@ -207,7 +208,6 @@ for _, item in pairs(Config.ConvertItems) do
        end
        TriggerClientEvent('vorp:TipRight', _source, takenItemsList, 5000)
 
-       -- Notify the player of the reward item if RewardItemsRarity is true and an item was given
        if item.RewardItemsRarity and rewardItemsGiven then
            local rewardItemText = "You received: " .. selectedRewardItem.item .. " x" .. selectedRewardItem.count
            TriggerClientEvent('vorp:TipRight', _source, rewardItemText, 5000)
