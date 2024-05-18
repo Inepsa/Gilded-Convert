@@ -9,6 +9,10 @@ shared_scripts {
     'config.lua',
 }
 
+client_scripts {
+    'client_animations.lua',
+}
+
 server_scripts {
     'server.lua',
 }
