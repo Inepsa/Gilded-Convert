@@ -1,6 +1,7 @@
 # Shared for the VORP community
 
 This script is incredibly handy and we use it for literally hundreds of items on our live server. 
+Makes an item usable, upon use it takes a set list of items from the inventory, and then gives a set list of items.
 Provided in the CFG is a tiny snippet of what we use to give you ideas. Any ideas to improve the code are more than welcome!
 
 Feel free to edit or use any part of the script as long as you give credit where due. 
@@ -17,7 +18,7 @@ Vorp_animations - Newest
 Ensure that vorp_animations is started before inepsaog_item_convert in your resources or server cfg files
 
 # Features
-Open cigarette packs, crates that carry ore, pack cigarettes into packages
+Open cigarette packs, crates, pack cigarettes into packages, sacks of flour, saloon meal boxes etc (limitless)
 
 Turn an item or a list of items into a weapon with a double click
 
