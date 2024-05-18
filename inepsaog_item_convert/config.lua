@@ -13,7 +13,6 @@ Config.ConvertItems = {
         UsableItem = "whetstone_crate_empty", -- Item you "use" in your pockets, add to database
         ErrorMsg = "Not enough space",
         SuccessMsg = "You Packed up 50 Whetstone",
-        WebhookName = "",
         TakenItems = {                                      -- Optional field -- rarity = 150
             { item = "whetstone_crate_empty", count = 1 },  -- Item taken you need in your pockets, add to database
             { item = "whetstone",             count = 50 }, -- Item taken you need in your pockets, add to database
@@ -32,7 +31,6 @@ Config.ConvertItems = {
         UsableItem = "whetstone_crate_full",
         ErrorMsg = "Not enough space",
         SuccessMsg = "You Took Out 50 Whetstone",
-        WebhookName = "",
         TakenItems = {
             { item = "whetstone_crate_full", count = 1 },
         },
@@ -54,7 +52,6 @@ Config.ConvertItems = {
         UsableItem = "bag_paper",
         ErrorMsg = "You need at least 1",
         SuccessMsg = "You found something out of that dirty bag",
-        WebhookName = "",
         TakenItems = {
             { item = "bag_paper", count = 1 },
         },
@@ -88,7 +85,6 @@ Config.ConvertItems = {
         UsableItem = "weapon_shotgun_sawedoff",    -- this is an item. In our server you can craft weapons as items so you can stack them. Then you can double click to turn into a weapon
         ErrorMsg = "You need more",                 
         SuccessMsg = "Equipped",
-        WebhookName = "",
         TakenItems = {
             { item = "weapon_shotgun_sawedoff", count = 1 },   -- You could also have a list of item parts here for your weapons, and have a blueprint as the UsableItem above
         },
@@ -98,8 +94,6 @@ Config.ConvertItems = {
         WeaponReward = true,
         WeaponRewardAmt = 1,
         WeaponItems = { { weapon = "WEAPON_SHOTGUN_SAWEDOFF" } },   -- Currently I think you can only do one
-        CashReward = 0,
-        GoldReward = 0,
         animation = "inspection2",
         duration = 2000,
     },
@@ -111,7 +105,6 @@ Config.ConvertItems = {
         UsableItem = "goldenbluntbox",
         ErrorMsg = "Not enough space",
         SuccessMsg = "You opened a Cigar Box",
-        WebhookName = "",
         TakenItems = {
             { item = "goldenbluntbox", count = 1 },
         },
@@ -129,7 +122,6 @@ Config.ConvertItems = {
         UsableItem = "fettybluntbox",
         ErrorMsg = "Not enough space",
         SuccessMsg = "You opened a Fetty Box",
-        WebhookName = "",
         TakenItems = {
             { item = "fettybluntbox", count = 1 },
         },
