@@ -1,10 +1,12 @@
-# Gilded Convert Script
-# Created by InepsaOG and shared for the VORP community
+# InepsaOG's Convert Script
+# Shared for the VORP community so we can improve it together
 
 This script is incredibly handy and we use it for literally hundreds of items on our live server. 
 Provided in the CFG is a tiny snippet of what we use to give you ideas. Any ideas to improve the code are more than welcome!
 
 Feel free to edit or use any part of the script as long as you give credit where due. 
+This is totally inspired by mercury developments script which I loved, however is escrow locked. 
+I wanted animations so wrote this one and cant imagine running a server without it
 
 # Requirements
 Vorp Core - Newest
@@ -26,9 +28,12 @@ Random item option for things like grab bags
 
 Notifications for everything taken, given etc.
 
-# Potenitally adding in
-Webhooks. Used to have them but not incredibly useful information so im 50/50 on them
-Take in actual weapons to break down into parts
+# Future plans, when free time
+- Create deployable objects/items from taken items in a conversion. Like a blueprint to create a chest/chair/whatever that takes all the requirements listed in cfg
+- Breaking down the item/object would consume a tool, and return all the items originally taken
+- Add optional storage (vorp exports) to those deployed objects with lockpicking mini game
+- Take in actual weapons to break down into parts
+- Add option to create a serial number scratch tool to alter weapon serials and consume the tool
 
 # REQUIREMENTS Part 2
 
